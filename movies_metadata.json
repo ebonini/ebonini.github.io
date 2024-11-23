@@ -11,7 +11,7 @@ def extract_movie_ids(playlist_url):
     return movie_ids
 
 # URL da playlist M3U (deve ser acessível via HTTP/HTTPS)
-playlist_url = 'https://seu-usuario.github.io/seu-repositorio/playlist.m3u'
+playlist_url = 'https://docs.google.com/uc?export=download&id=1ot8ylvaZMdGDtntCIn4A3WhQiNzP09gn'
 
 # Extrair os IDs dos filmes da playlist
 movie_ids = extract_movie_ids(playlist_url)
