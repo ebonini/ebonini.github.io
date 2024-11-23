@@ -30,9 +30,11 @@ for movie_id in movie_ids:
     # Adicione verificação da resposta
     if response.status_code == 200:
         try:
+            # Exibir a resposta bruta para depuração
+            print(f"Resposta bruta da API para o ID {movie_id}: {response.text}")
             data = response.json()
-        except json.JSONDecodeError:
-            print(f"Erro ao decodificar JSON para o ID {movie_id}")
+        except json.JSONDecodeError as e:
+            print(f"Erro ao decodificar JSON para o ID {movie_id}: {e}")
             continue
         
         # Captura dos metadados necessários
